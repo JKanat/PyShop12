@@ -3,7 +3,7 @@
 {% block content %}
     <h1>Home Page</h1>
     <ol class="list-group list-group-numbered">
-        {%for category in cotegories%}
+        {%for category in categories%}
         {%if category.products.all%}
         <li class="list-group-item"><a href="{% url 'list' category.slug %}">{{category.title}}</a></li>
         {% endif %}
